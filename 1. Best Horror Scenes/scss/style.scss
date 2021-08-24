@@ -74,13 +74,19 @@ header {
 
 main {
     //height: 5000vh;
-    background-color: $red;
+    //background-color: $red;
     margin-left: $fixedWidth;
-    // display: flex;
-    // justify-content:center;
-    // align-items: center;
     .movie {
-        width: 100%;
+        background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.05) 5%,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      )
+      $red;
+        //width: 100%;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -110,6 +116,8 @@ main {
             }
             img {
                 width: 100%;
+                box-shadow: 0 80px 80px -80px #000, 0 0 12px rgba(0, 0, 0, 0.06),
+                inset 0 0 0 1px rgba(0, 0, 0, 0.2);
             }
         }
     }
